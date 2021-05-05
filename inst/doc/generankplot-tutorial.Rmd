@@ -1,0 +1,43 @@
+---
+title: "generankplot-tutorial"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{generankplot-tutorial}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+The goal of generankplot is to draw gene ranking dot plot.
+
+## Installation
+
+You can install the released version of generankplot from [GitHub](https://github.com/dongwei1220/generankplot) with:
+
+``` r
+devtools::install_github("dongwei1220/generankplot")
+```
+
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+```{r, fig.width=7,fig.height=5}
+library(generankplot)
+
+## basic example code
+require(viridis)
+data(diff_express)
+head(diff_express)
+
+generankplot(diff_express,top_n = 5)
+generankplot(diff_express,top_n = 10,palette = "RdBu")
+p <- generankplot(diff_express,top_n = 10,log2fc = 1.5)
+p + scale_color_viridis()
+```

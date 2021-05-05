@@ -1,0 +1,17 @@
+Package: generankplot
+Type: Package
+Title: This Package Is Used to Draw Gene Ranking Dot Plot.
+Version: 0.1.0
+Author: Wei Dong
+Maintainer: Wei Dong <dongw26@mail2.sysu.edu.cn>
+Description: More about what it does (maybe more than one line)
+    Use four spaces when indenting paragraphs within the Description.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.6.0), ggplot2, ggrepel, RColorBrewer
+RoxygenNote: 7.1.1
+Suggests: rmarkdown, knitr
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2021-05-05 13:48:23 UTC; Dell
