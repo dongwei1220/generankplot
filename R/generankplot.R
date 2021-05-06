@@ -8,7 +8,7 @@
 #' @param top_n set the number of top gene for labeling, default = 10.
 #' @param palette set the dot plot color palette.
 #' @param log2fc set the threshold of log2foldchage, default = 1.
-#' @param label_size set the font size of labels, default = 10.
+#' @param label_size set the font size of labels, default = 5.
 #' @param x_lab set the x-axis label.
 #' @param y_lab set the y-axis label.
 #'
@@ -30,7 +30,7 @@
 #' p <- generankplot(diff_express,top_n = 10,log2fc = 1.5)
 #' p + scale_color_viridis()
 generankplot <- function(data, top_n = 10, palette = "Spectral",
-                         log2fc = 1, label_size = 6,
+                         log2fc = 1, label_size = 5,
                          x_lab = "Rank of differentially expressed genes",
                          y_lab = "Log2FoldChange")
 {
