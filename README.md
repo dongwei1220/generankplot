@@ -66,5 +66,5 @@ p + scale_color_viridis()
 
 <img src="man/figures/README-example-3.png" width="100%" />
 
-In that case, don’t forget to commit and push the resulting figure
-files, so they display on GitHub and CRAN.
+## Support
+If you have any questions, or found any bug in the program, please write to us at dongw26@mail2.sysu.edu.cn
